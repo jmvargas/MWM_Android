@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+     <android.gesture.GestureOverlayView
+            android:id="@+id/gestureView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#55555555"
+            android:eventsInterceptionEnabled="true"
+            android:gestureColor="#AAFF9955"
+            android:gestureStrokeType="multiple" >
+        </android.gesture.GestureOverlayView>
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="5dip"
+        android:text="score: 1240"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip">
+
+            <ImageView
+                android:id="@+id/imageViewResultUser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/papel" />
+
+            <ImageView
+                android:id="@+id/imageViewResultComputer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/piedra" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonEscuchaMe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:text="Escucha Me" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <ImageButton
+                android:id="@+id/imageButtonPiedra"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/piedra" android:onClick="onClickPiedra"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonPapel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/papel" android:onClick="onClickPapel"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonTijera"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tijera" android:onClick="onClickTijera"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+     
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutToAddAdapterView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:layout_weight="1">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonListView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="onClickListView"
+            android:text="@string/listview" />
+
+        <Button
+            android:id="@+id/buttonGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickGridView"
+            android:text="@string/gridview" />
+
+        <Button
+            android:id="@+id/buttonGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickGallery"
+            android:text="@string/gallery" />
+
+        <Button
+            android:id="@+id/ButtonAddItem"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickAddItem"
+            android:text="@string/additem" />
+
+    </LinearLayout>
+
+</LinearLayout>

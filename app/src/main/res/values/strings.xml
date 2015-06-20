@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WidgetRSSReaderActivity!</string>
+    <string name="app_name">ETSII Master Advanced Android</string>
+    <string name="search_article_by_title">Search article by Tittle</string>
+    <string name="listview">ListView</string>
+    <string name="gridview">GridView</string>
+    <string name="gallery">Gallery</string>
+    <string name="additem">Add Item</string>
+    <string name="description">Description</string>
+    <string name="title">Tittle</string>
+    <string name="when">When in seconds</string>
+    <string name="show_notification">Show  Notification</string>
+    <string name="show_alarm">Throw Alarma</string>
+
+    <!-- voice recognition -->
+    <string name="hear_you">I hear you</string>
+
+    <!-- Activity Action Bar -->
+    <string name="menu_add">Add row</string>
+    <string name="menu_delete">Delete row</string>
+    <string name="menu_back">Back</string>
+    <string name="menu_search">Find</string>
+    <!-- Activity Action Bar Advanced -->
+    <string name="menu_camera">Camera</string>
+    <string name="menu_call">Call</string>
+    <string name="menu_agenda">Agenda</string>
+    <string name="menu_clock">Clock</string>
+    
+    <!-- Broadcast Service Activity communication-->
+    <string name="download">Download Image</string>
+     <string name="bind_service">Bind Service</string>
+     <string name="service_binded">Service Connected</string>
+    <string name="url_image">Url image to Download</string>
+    <string name="no_animation">No Animation</string>
+    <string name="animation_zoom">Animation Zoom</string>
+    <string name="animation_behind">Animation Behind</string>
+    <string name="animation_hiperspace">Animation Hiperspace</string>
+    <string name="title_activity_ej2_1">Ej2_1Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ej4">Ej4Activity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ej6">Ej6Activity</string>
+    
+    
+    
+</resources>

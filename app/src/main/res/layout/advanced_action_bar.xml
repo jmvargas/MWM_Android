@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFragmentAddAction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonAddActionToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Action Items By Fragment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddTabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ButtonAddTabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Tabs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCreateDropDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ButtonCreateDropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Drop Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCustomizeActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ButtonCustomizeActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize Action Bar" />
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/LinearLayoutContextMenu"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonContextMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add context menu" />
+    </LinearLayout>
+
+</LinearLayout>

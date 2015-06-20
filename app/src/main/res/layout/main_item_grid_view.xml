@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Este es el item de la Activity principal cuando es un ListView -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNoticiaBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitularNoticia"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="TextView"
+        android:gravity="center"
+        android:inputType="textMultiLine"/>
+    
+    <ImageView
+        android:id="@+id/ivNoticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvCuerpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:inputType="textMultiLine"/>
+
+</LinearLayout>

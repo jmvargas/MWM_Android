@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true" >
+
+            <fragment
+                android:id="@+id/menuFragment"
+                android:name="com.xanxamobile.androidavanzado.fragments.ListMenuFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageViewSepparator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/video_vertical_sepparator"
+                android:text="left" 
+                android:layout_gravity="center|right"/>
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/contentFragment"
+            android:name="com.xanxamobile.androidavanzado.fragments.ContentFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

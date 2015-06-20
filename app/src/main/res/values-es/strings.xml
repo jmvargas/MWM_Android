@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WidgetRSSReaderActivity!</string>
+    <string name="app_name">ETSII Master Android Avanzado</string>
+    <string name="search_article_by_title">Buscar Artículo por título</string>
+    <string name="listview">ListView</string>
+    <string name="gridview">GridView</string>
+    <string name="gallery">Gallery</string>
+    <string name="additem">Añadir elemento</string>
+    <string name="description">Descripción</string>
+    <string name="title">Título</string>
+    <string name="when">¿Dentro de cuántos segundos?</string>
+    <string name="show_notification">Lanza  Notification</string>
+    <string name="show_alarm">Lanza Alarma</string>
+
+    <!-- voice recognition -->
+    <string name="hear_you">Te escucho</string>
+
+</resources>

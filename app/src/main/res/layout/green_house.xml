@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- TODO hay que hacer un con Cocos2D, AndEngine y Animations que la casa se mueva, rote, haga alpha in/out ... -->
+    <ImageButton
+        android:id="@+id/imageButtonGreenHouse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" 
+        android:layout_weight="1" android:background="@drawable/selector_background" android:onClick="onGreenHouseClick"/>
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:onClick="onClickClock"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="bottom|center" android:layout_marginBottom="5dip">
+
+        <ImageView
+            android:id="@+id/imageViewBackView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_background" />
+
+        <Button
+            android:id="@+id/ButtonDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arribaIzq"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arribaDer" android:layout_toRightOf="@id/ButtonDownload"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" abajoIzq" android:layout_below="@id/ButtonDownload"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" abajoDer" android:layout_toRightOf="@id/button3" android:layout_below="@id/button2"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

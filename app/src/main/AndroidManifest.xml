@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xanxamobile.androidavanzado"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".WidgetRSSReaderActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <receiver android:name=".widget.RSSReaderWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/rssreader_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.ChangeColorWidgetProvider"
+            android:label="Change Color Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/changecolor_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.ChangeColorReceiver"
+            android:label="Change Color Widget" >
+            <intent-filter>
+                <action android:name="actionChangeColor" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AAListActivityMenu"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GreenHouseActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ActivityCanvasBackgroundAnimations"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".ActivityAdapterGeneric"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".ActivityNotifications"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ActivityAlarm"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <receiver android:name=".receiver.AlarmReceiver" />
+
+        <activity
+            android:name=".ActivitySensor"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GestureActivity" />
+        <activity android:name=".TTSActivity" />
+        <activity android:name=".VoiceRecognitionActivity" />
+        <activity
+            android:name=".ActivityPiedraPapelTijera"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".ActivityActionBar"
+            android:theme="@style/RojoActionBarTheme" />
+        <activity
+            android:name=".FragmentActivityExample"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".ActivityBroadCastReceiverAndService"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <service android:name=".services.DownloadService" />
+
+        <activity
+            android:name=".ActivityLayoutTransition"
+            android:theme="@android:style/Theme.Holo" />
+        <activity android:name=".AdvancedActionBarActivity" />
+        <activity
+            android:name=".Ej2_1Activity"
+            android:label="@string/title_activity_ej2_1" >
+        </activity>
+        <activity
+            android:name=".Ej4Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ej4" >
+        </activity>
+
+        <service
+            android:name=".HourService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".Ej6Activity"
+            android:label="@string/title_activity_ej6" >
+        </activity>
+    </application>
+
+</manifest>
